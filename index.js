@@ -24,9 +24,35 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
-
 // Strings
 
+// 1. Use destructuring to assign appropriate variables based on the sounds animals make.
+const [moo, neigh, baa, oink, cluck] = 'cow horse sheep pig chicken'.split(' ');
+
+// 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
+const [bessie, dolly, babe, little] = 'cow sheep pig chicken'.split(' ');
+
+// 3. Little the chicken had to go back to the coop, so now we're left with three. Let's use color variables of blackAndWhite, black, and pink.
+const [blackAndWhite, black, pink] = 'cow sheep pig'.split(' ');
+
+// Arrays
+
+// 1. Use destructuring to declare the seven traditional rainbow color variables using the color names.
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+
+// 2. Use destructuring to declare six rainbow color variables using initials.
+const [r, o, y, g, b, v] = ['red','orange','yellow','green','blue','violet'];
+
+// 3. Use destructuring to declare Indigo using indg.
+const indg = 'indigo';
+
+// Objects
+
+// 4. Use destructuring to assign all appropriate variables using the keys as the variable names.
+const {muppetName, color, song, job, partner} = muppet;
+
+// 5. Use destructuring to assign songs 2 and 4, and Kermit's job and partner.
+const {album: {theMuppetMovie:{song2, song4}}, nestedJob, nestedPartner}= nestedMuppet;
 // 1. Use destructuring to assign appropriate variables based on the sounds animals make.
 
 // 2. Bolt the horse wandered off, so just give us four animals, and let's name them bessie, dolly, babe, and little.
